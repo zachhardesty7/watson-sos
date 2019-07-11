@@ -20,6 +20,8 @@ import {
 	SideNavMenuItem,
 } from 'carbon-components-react'
 
+import { Grid } from '../components'
+
 import '../styles/Dashboard.scss'
 
 const Fade16 = () => (
@@ -99,5 +101,15 @@ export const DashboardPage = () => (
 				</SideNavLink>
 			</SideNavItems>
 		</SideNav>
+
+		<main className='main'>
+			<Grid className='grid'>
+				<Grid.Row>
+					<Grid.Col>
+						safsadljksd;k
+					</Grid.Col>
+				</Grid.Row>
+			</Grid>
+		</main>
 	</>
 )
