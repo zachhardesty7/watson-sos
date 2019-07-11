@@ -1,0 +1,50 @@
+// TODO: import sass variables from def files
+$sm-max: 671px;
+$md-min: 672px;
+$md-max: 1055px;
+$lg-min: 1055px;
+$lg-max: 1311px;
+$xlg-min: 1312px;
+$xlg-max: 671px;
+$max-min: 671px;
+
+// manually remove negative margins of rows when removing horiz padding on grid
+.bx--no-gutter .bx--row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bx--no-gutter--left .bx--row {
+  margin-left: 0;
+}
+
+.bx--no-gutter--right .bx--row {
+  margin-right: 0;
+}
+
+// custom functionality for hiding zero column width cols
+@media only screen and (max-width: 671px) {
+  .bx--col-sm-0 {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 672px) and (max-width: 1055px) {
+  .bx--col-md-0 {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1056px) and (max-width: 1311px) {
+  .bx--col-lg-0 {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1312px) and (max-width: 1583px) {
+  .bx--col-xlg-0 {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1584px) {
+  .bx--col-max-0 {
+    display: none !important;
+  }
+}

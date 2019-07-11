@@ -1,0 +1,69 @@
+@import '../../node_modules/@carbon/elements/scss/type/styles';
+@import '../../node_modules/@carbon/elements/scss/type/font-face/mono';
+@import '../../node_modules/@carbon/elements/scss/type/font-face/sans';
+@import '../../node_modules/@carbon/elements/scss/type/font-family';
+@import '../../node_modules/@carbon/elements/scss/layout/spacing';
+@import '../../node_modules/@carbon/elements/scss/icons/icons';
+
+@include carbon--font-face-sans();
+@include carbon--font-face-mono();
+@include carbon--icons();
+
+$feature-flags: (
+  ui-shell: true,
+);
+
+body {
+  @include carbon--font-family('sans');
+	padding: 0;
+}
+
+// simple quick resets
+a:link    {color:inherit;}
+a:visited {color:inherit;}
+a:hover   {color:inherit;}
+a:active  {color:inherit;}
+a {
+  text-decoration: none;
+}
+
+// following borrowed from https://github.com/carbon-design-system/carbon-elements/blob/master/packages/icons/examples/preview/styles.scss
+
+body,
+p {
+	margin: 0;
+}
+
+h1 {
+  @include carbon--type-style('productive-heading-05');
+	margin: $spacing-07 0;
+}
+
+h2 {
+  @include carbon--type-style('productive-heading-04');
+	margin: $spacing-06 0;
+}
+
+h3 {
+  @include carbon--type-style('productive-heading-03');
+	margin: $spacing-05 0;
+}
+
+h4 {
+  @include carbon--type-style('heading-02');
+	margin: $spacing-05 0;
+}
+
+h5 {
+  @include carbon--type-style('heading-01');
+	margin: $spacing-05 0;
+}
+
+p {
+	@include carbon--type-style('body-long-02');
+	margin-bottom: $spacing-05;
+}
+
+#root {
+  width: 100%;
+}

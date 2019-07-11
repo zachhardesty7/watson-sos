@@ -1,0 +1,204 @@
+@import '../../node_modules/@carbon/elements/scss/type/styles';
+@import '../../node_modules/@carbon/elements/scss/type/font-face/mono';
+@import '../../node_modules/@carbon/elements/scss/type/font-face/sans';
+@import '../../node_modules/@carbon/elements/scss/type/font-family';
+@import '../../node_modules/@carbon/elements/scss/layout/spacing';
+@import '../../node_modules/@carbon/elements/scss/icons/icons';
+
+@include carbon--font-face-sans();
+@include carbon--font-face-mono();
+@include carbon--icons();
+
+.right {
+	display:flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+.right-content {
+	padding: 3rem 5rem !important;
+}
+
+// FIXME: use built in classes
+.no-left-gutter {
+	height: 100%;
+	padding-left: 0 !important;
+}
+
+.main {
+	background: #f2f4f8;
+}
+
+.left {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.input-centered {
+	text-align: center;
+}
+
+.label {
+	float: left;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+.heading {
+	text-align: left;
+	justify-content: left;
+	border-radius: 0;
+	background-color: #fff;
+	height: auto;
+	width: 100%;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border: 0px solid #000000;
+	padding-bottom: 0.5rem;
+}
+
+#ibm-header {
+	font-weight: 400;
+	font-size: 1rem;
+	color: #202529;
+	line-height: 1.25;
+}
+
+#product-header {
+	font-size: 1rem;
+	color: #202529;
+	font-weight: 800;
+}
+
+.login-provider-instructions {
+	padding: 10px 0 20px;
+	display: flex;
+	justify-content: flex-start;
+	justify-self: flex-start;
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.login-provider-instructions-secondary {
+	color: grey;
+}
+
+.passwordlessoptions {
+	padding: 1.5rem 0;
+}
+
+.passwordsless {
+	display: flex;
+	justify-content: center;
+}
+
+.qr {
+	width: 150px;
+	height: 150px;
+}
+
+.bx--label {
+	margin-bottom: 0 !important;
+}
+
+#sign-in-btn {
+	display: flex;
+	margin-left: auto;
+}
+
+.r {
+	font-size: 10px;
+	margin: 0 4px 0 3px;
+	position: relative;
+	top: -10px;
+}
+
+h1, h2 {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	line-height: 75px;
+	margin: 0;
+	font-family: Helvetica;
+	font-size: 20px;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-webkit-locale: en;
+}
+
+input {
+	margin-top: 7px;
+}
+
+#alert-img {
+	float: left;
+	margin: 0 8px 0 0;
+	height: 24px;
+	width: 24px;
+}
+
+#login-error-text, #password-error-text {
+	height: auto;
+	float: left;
+	width: 85%;
+	overflow: hidden;
+	margin-top: 0px;
+	color: red;
+}
+
+.button {
+	width: 90%;
+	margin-top: 22px;
+	border: none;
+	height: 31px;
+	background-color: #4178BE;
+	color: white;
+}
+
+.button:hover {
+	background-color: #264A60;
+}
+
+.cs-select-login-provider {
+	min-width: 400px;
+}
+
+.cs-select-login-provider .login-main {
+	padding: 20px;
+}
+
+.cs-select-login-provider-instructions {
+	padding-bottom: 16px;
+	text-align: center;
+}
+
+.cs-select-login-provider .cs-flex-column {
+	text-align: center;
+}
+
+.cs-select-login-provider .cs-link-button {
+	margin: 4px 0px;
+}
+
+.bx--text-input__field-wrapper {
+	width: 100%;
+}
+
+/*
+ * Handle screens with width less than 501px
+ */
+@media (max-width: 500px) {
+	.cs-select-login-provider {
+		min-width: 100%;
+	}
+	
+	.login, .cs-change-password {
+		width: 100%;
+	}
+}

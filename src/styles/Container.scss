@@ -1,0 +1,170 @@
+// sources
+// https://github.com/Semantic-Org/Semantic-UI/blob/master/src/definitions/elements/container.less
+// https://github.com/Semantic-Org/Semantic-UI/blob/master/src/themes/default/globals/site.variables
+
+/*-------------------
+     Breakpoints
+--------------------*/
+
+$mobileBreakpoint            : 320px;
+$tabletBreakpoint            : 672px;
+$computerBreakpoint          : 1056px;
+$largeMonitorBreakpoint      : 1312px;
+$widescreenMonitorBreakpoint : 1584px;
+
+$emSize : 14px;
+
+/* Rendered Scrollbar Width */
+$scrollbarWidth: 17px;
+
+/*******************************
+            Container
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Minimum Gutter is used to determine  the maximum container width for a given device */
+
+$maxWidth: 100%;
+
+/* Devices */
+$mobileMinimumGutter: 0em;
+$mobileWidth: auto;
+$mobileGutter: 1em;
+
+$tabletMinimumGutter: ($emSize * 1);
+$tabletWidth: $tabletBreakpoint - ($tabletMinimumGutter * 2) - $scrollbarWidth;
+$tabletGutter: auto;
+
+$computerMinimumGutter: ($emSize * 1.5);
+$computerWidth: $computerBreakpoint - ($computerMinimumGutter * 2) - $scrollbarWidth;
+$computerGutter: auto;
+
+$largeMonitorMinimumGutter: ($emSize  * 2);
+$largeMonitorWidth: $largeMonitorBreakpoint - ($largeMonitorMinimumGutter * 2) - $scrollbarWidth;
+$largeMonitorGutter: auto;
+
+/* Coupling (Add Negative Margin to container size) */
+$gridGutterWidth: 2rem;
+$relaxedGridGutterWidth: 3rem;
+$veryRelaxedGridGutterWidth: 5rem;
+
+$mobileGridWidth: $mobileWidth;
+$tabletGridWidth: calc($tabletWidth + $gridGutterWidth);
+$computerGridWidth: calc($computerWidth + $gridGutterWidth);
+$largeMonitorGridWidth: calc($largeMonitorWidth + $gridGutterWidth);
+
+$mobileRelaxedGridWidth: $mobileWidth;
+$tabletRelaxedGridWidth: calc($tabletWidth + $relaxedGridGutterWidth);
+$computerRelaxedGridWidth: calc($computerWidth + $relaxedGridGutterWidth);
+$largeMonitorRelaxedGridWidth: calc($largeMonitorWidth + $relaxedGridGutterWidth);
+
+$mobileVeryRelaxedGridWidth: $mobileWidth;
+$tabletVeryRelaxedGridWidth: calc($tabletWidth + $veryRelaxedGridGutterWidth);
+$computerVeryRelaxedGridWidth: calc($computerWidth + $veryRelaxedGridGutterWidth);
+$largeMonitorVeryRelaxedGridWidth: calc($largeMonitorWidth + $veryRelaxedGridGutterWidth);
+
+/* Responsive */
+$largestMobileScreen : ($tabletBreakpoint - 1px);
+$largestTabletScreen : ($computerBreakpoint - 1px);
+$largestSmallMonitor : ($largeMonitorBreakpoint - 1px);
+$largestLargeMonitor : ($widescreenMonitorBreakpoint - 1px);
+
+/* All Sizes */
+.zh.container {
+  display: block;
+  max-width: $maxWidth !important;
+}
+
+/* Mobile */
+@media only screen and (max-width: $largestMobileScreen) {
+  .zh.container {
+    width: $mobileWidth !important;
+    margin-left: $mobileGutter !important;
+    margin-right: $mobileGutter !important;
+  }
+  .zh.grid.container {
+    width: $mobileGridWidth !important;
+  }
+  .zh.relaxed.grid.container {
+    width: $mobileRelaxedGridWidth !important;
+  }
+  .zh.very.relaxed.grid.container {
+    width: $mobileVeryRelaxedGridWidth !important;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: $tabletBreakpoint) and (max-width: $largestTabletScreen) {
+  .zh.container {
+    width: $tabletWidth;
+    margin-left: $tabletGutter !important;
+    margin-right: $tabletGutter !important;
+  }
+  .zh.grid.container {
+    width: $tabletGridWidth !important;
+  }
+  .zh.relaxed.grid.container {
+    width: $tabletRelaxedGridWidth !important;
+  }
+  .zh.very.relaxed.grid.container {
+    width: $tabletVeryRelaxedGridWidth !important;
+  }
+}
+
+/* Small Monitor */
+@media only screen and (min-width: $computerBreakpoint) and (max-width: $largestSmallMonitor) {
+  .zh.container {
+    width: $computerWidth;
+    margin-left: $computerGutter !important;
+    margin-right: $computerGutter !important;
+  }
+  .zh.grid.container {
+    width: $computerGridWidth !important;
+  }
+  .zh.relaxed.grid.container {
+    width: $computerRelaxedGridWidth !important;
+  }
+  .zh.very.relaxed.grid.container {
+    width: $computerVeryRelaxedGridWidth !important;
+  }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: $largeMonitorBreakpoint) {
+  .zh.container {
+    width: $largeMonitorWidth;
+    margin-left: $largeMonitorGutter !important;
+    margin-right: $largeMonitorGutter !important;
+  }
+  .zh.grid.container {
+    width: $largeMonitorGridWidth !important;
+  }
+  .zh.relaxed.grid.container {
+    width: $largeMonitorRelaxedGridWidth !important;
+  }
+  .zh.very.relaxed.grid.container {
+    width: $largeMonitorVeryRelaxedGridWidth !important;
+  }
+}
+
+/*-------------------
+       Types
+--------------------*/
+
+/* Text */
+$textWidth: 700px;
+$textLineHeight: 1.5;
+// $textSize: $large;
+
+// .zh--container {
+//   max-width: 40em;
+//   margin: auto;
+// }
+
+// .zh--container-text {
+//   max-width: 40em;
+//   margin: auto;
+// }

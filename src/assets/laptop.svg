@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="447" height="191" viewBox="0 0 447 191">
+  <defs>
+    <path id="a" d="M0 190.2h447V0H0z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round" d="M14.7 158.7h89.2m-89.2 5h89.2m-89.2 4.8h89.2m-89.2 5h89.2m-89.2 4.8h89.2"/>
+    <g>
+      <path stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round" d="M101 189.7H7.6v-6.9h93.6a14.4 14.4 0 0 0 0-28.6H7.5v-6.9h93.6a21.2 21.2 0 0 1 0 42.4zm-90.4-35.5v28.6"/>
+      <path stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round" d="M101.7 147.3h-53a5.2 5.2 0 0 1-5.1-5.1V74.8h63.3v67.4a5.2 5.2 0 0 1-5.2 5.1zm-57.8-6h62.7M43.6 118.5c-7 0-12.7-5.7-12.7-12.6v-7a4.8 4.8 0 0 1 4.8-4.8h7.9"/>
+      <path stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round" d="M43.6 86h-7.9c-7 0-12.9 5.8-12.9 13v6.9c0 11.4 9.3 20.7 20.8 20.7m348.3-35.2c5.6-15.6 11.6-29.8 15.2-33.7 8.6-9.6 21.4-12.4 21.4-12.4-1.3 5.5-7.9 27.7-14.8 49.2"/>
+      <path stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round" d="M393.5 104.6c-2.4-22.2-7-52.5-11.6-60a84.2 84.2 0 0 0-22.4-21.3c3.4 7.9 8 32.1 11.7 55.2M358 95.6c1.7 7.7 3 15 4 21"/>
+      <path stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round" d="M377.4 99.5c-5-20-13.1-43.1-23.3-50.8-16.8-12.7-14-8-14-8 5.4 8.8 11 26.2 15.2 43.6"/>
+      <path stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round" d="M386.2 116.7c-3.7-10.3-14.2-28.2-21.8-30.4-9.3-2.8-17.8-2.8-17.8-2.8 7.7 6.3 20.6 23 24.5 33.2m46.2-22.4l-17.3 1a168 168 0 0 0-13.7 21.4m20.3 0c1.4-3.9 3-8 4.7-11.7"/>
+      <path stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round" d="M400 95.4c5 6.3 22.6 16.6 26.8 22.5 4.2 5.8 7.2 9.6 7.2 9.6s.7-14.6-4-21.2a59.1 59.1 0 0 0-12.7-12l-17.3 1zm11.4 21.3h-53c-5.8 4.1-9.9 10.2-9.9 16.9l-1.9 33.5a22.6 22.6 0 0 0 22.6 22.6h31.3a22.6 22.6 0 0 0 22.6-22.6l-2-33.5c0-6.7-4-12.8-9.8-17z"/>
+      <path fill="#FEFEFE" d="M260.5 172.1h102.7V8.6a8 8 0 0 0-8-8H110a7.9 7.9 0 0 0-7.9 7.8V172H205"/>
+      <path stroke="#3D3D3D" stroke-linejoin="round" d="M260.5 172.1h102.7V8.6a8 8 0 0 0-8-8H110a7.9 7.9 0 0 0-7.9 7.8V172H205"/>
+      <path fill="#F1F1F1" d="M204.9 172.1v3a4 4 0 0 0 4 4h47.7a4 4 0 0 0 4-4v-3h92V30a7.9 7.9 0 0 0-7.8-7.9H119.2a7.9 7.9 0 0 0-7.9 7.9V172H205z"/>
+      <path stroke="#3D3D3D" d="M236.7 12.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+      <path fill="#F1F1F1" d="M260.5 172.1h92.2V21.6H111.3v150.5H205"/>
+      <path stroke="#193648" stroke-linejoin="round" d="M260.5 172.1h92.2V21.6H111.3v150.5H205"/>
+      <path fill="#F2F2F2" d="M260.5 172.1h92.2V21.6H111.3v150.5H205"/>
+      <path stroke="#3D3D3D" stroke-linejoin="round" d="M260.5 172.1h92.2V21.6H111.3v150.5H205"/>
+      <mask id="b" fill="#fff">
+        <use xlink:href="#a"/>
+      </mask>
+      <path fill="#DBDBDB" d="M111.3 28h241.4v-5.9H111.3z" mask="url(#b)"/>
+      <path stroke="#3D3D3D" stroke-linejoin="round" d="M260.5 172.1h92.2V21.6H111.3v150.5H205" mask="url(#b)"/>
+      <path fill="#FEFEFE" d="M260.5 172.1v3a4 4 0 0 1-3.9 4h-47.8a4 4 0 0 1-4-4v-3H83v17.6h299.5V172h-122z" mask="url(#b)"/>
+      <path stroke="#3D3D3D" stroke-linejoin="round" d="M260.5 172.1v3a4 4 0 0 1-3.9 4h-47.8a4 4 0 0 1-4-4v-3H83v17.6h299.5V172h-122z" mask="url(#b)"/>
+      <path stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round" d="M447.5 189.7H.5h224z" mask="url(#b)"/>
+      <path fill="#FEFEFE" d="M168 112.5h136.3V95.7H168.1z" mask="url(#b)"/>
+      <path stroke="#3D3D3D" stroke-linejoin="round" d="M168 112.5h136.3V95.7H168.1z" mask="url(#b)"/>
+      <path fill="#3D3D3D" d="M181.1 104a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0m14.1 0a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0m14.1 0a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0m14.1 0a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0m14.2 0a2.4 2.4 0 1 1-4.9 0 2.4 2.4 0 0 1 4.9 0" mask="url(#b)"/>
+      <path fill="#FEFEFE" d="M168 80.4h136.3V63.6H168.1z" mask="url(#b)"/>
+      <path stroke="#3D3D3D" d="M168 80.4h136.3V63.6H168.1z" mask="url(#b)"/>
+      <g mask="url(#b)">
+        <path fill="#FEFEFE" d="M176.3 72h93.1"/>
+        <path stroke="#3D3D3D" stroke-linecap="round" d="M176.3 72h93.1"/>
+      </g>
+      <path fill="#DBDBDB" d="M241.2 144.5h63.9v-16.8h-63.9z" mask="url(#b)"/>
+      <path stroke="#3D3D3D" stroke-linejoin="round" d="M241.2 144.5h63.9v-16.8h-63.9z" mask="url(#b)"/>
+    </g>
+  </g>
+</svg>
