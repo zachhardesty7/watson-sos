@@ -24,6 +24,7 @@ import {
 import { Grid } from '../components'
 
 import '../styles/Dashboard.scss'
+import companylogo from '../assets/WC_Logo.png'
 
 const Fade16 = () => (
 	<svg
@@ -40,7 +41,7 @@ const Fade16 = () => (
 export const DashboardPage = () => (
 	<>
 		<Header>
-			<HeaderMenuButton aria-label='Open menu' onClick={() => {}} />
+			<HeaderMenuButton aria-label='Open menu' onClick={() => { }} />
 			<HeaderName href='#'>
 				[SOS]
 			</HeaderName>
@@ -55,13 +56,13 @@ export const DashboardPage = () => (
 				</HeaderMenu>
 			</HeaderNavigation>
 			<HeaderGlobalBar>
-				<HeaderGlobalAction aria-label='Search' onClick={() => {}}>
+				<HeaderGlobalAction aria-label='Search' onClick={() => { }}>
 					<Search20 />
 				</HeaderGlobalAction>
-				<HeaderGlobalAction aria-label='Notifications' onClick={() => {}}>
+				<HeaderGlobalAction aria-label='Notifications' onClick={() => { }}>
 					<Notification20 />
 				</HeaderGlobalAction>
-				<HeaderGlobalAction aria-label='App Switcher' onClick={() => {}}>
+				<HeaderGlobalAction aria-label='App Switcher' onClick={() => { }}>
 					<AppSwitcher20 />
 				</HeaderGlobalAction>
 			</HeaderGlobalBar>
@@ -79,29 +80,29 @@ export const DashboardPage = () => (
 				<SideNavMenu renderIcon={Fade16} title='Category title'>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 					<SideNavMenuItem aria-current='page' href='#'>
-                Link
+						Link
 					</SideNavMenuItem>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavMenu renderIcon={Fade16} title='Category title'>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 					<SideNavMenuItem aria-current='page' href='#'>
-                Link
+						Link
 					</SideNavMenuItem>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavMenu renderIcon={Fade16} title='Category title'>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 					<SideNavMenuItem aria-current='page' href='#'>
-                Link
+						Link
 					</SideNavMenuItem>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavLink renderIcon={Fade16} href='#'>
-              Link
+					Link
 				</SideNavLink>
 				<SideNavLink renderIcon={Fade16} href='#'>
-              Link
+					Link
 				</SideNavLink>
 			</SideNavItems>
 			<div><p className='sideNavMtitle'>My Protocols</p></div>
@@ -109,29 +110,29 @@ export const DashboardPage = () => (
 				<SideNavMenu renderIcon={Fade16} title='Category title'>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 					<SideNavMenuItem aria-current='page' href='#'>
-                Link
+						Link
 					</SideNavMenuItem>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavMenu renderIcon={Fade16} title='Category title'>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 					<SideNavMenuItem aria-current='page' href='#'>
-                Link
+						Link
 					</SideNavMenuItem>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavMenu renderIcon={Fade16} title='Category title'>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 					<SideNavMenuItem aria-current='page' href='#'>
-                Link
+						Link
 					</SideNavMenuItem>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavLink renderIcon={Fade16} href='#'>
-              Link
+					Link
 				</SideNavLink>
 				<SideNavLink renderIcon={Fade16} href='#'>
-              Link
+					Link
 				</SideNavLink>
 			</SideNavItems>
 		</SideNav>
@@ -144,21 +145,35 @@ export const DashboardPage = () => (
 					<Grid.Col xlg='6'>
 						<Grid.Row className='cell'>
 							<Tile>
-								<div>Educational Institution</div>
-								<div className='sideNavMtitle'>Willow Glen City College</div>
-								<div>4584  Hinkle Lake Road</div>
+								<Grid.Row className='cell'>
+									{/* <Grid.Col> */}
+									<div className='colSpace'><img src={companylogo} width='100px' height='130px' alt='WC Logo' /></div>
+									{/* </Grid.Col> */}
+									<Grid.Col>
+										<Grid.Row>
+											<div>Educational Institution</div>
+										</Grid.Row>
+										<Grid.Row>
+											<div className='tileTile'>Willow Glen City College</div>
+										</Grid.Row>
+										<Grid.Row><div className='descTile'>4584  Hinkle Lake Road</div></Grid.Row>
+										<Grid.Row><div className='descTile'>Roxbury, MA, 02119</div></Grid.Row>
+										<Grid.Row><div className='descTile'>Tel : 123 4567891</div></Grid.Row>
+										<Grid.Row><div className='descTile'>www.wgcc.edu</div></Grid.Row>
+									</Grid.Col>
+								</Grid.Row>
 							</Tile>
 						</Grid.Row>
 						<Grid.Row className='cell'>
 							<Tile>
-							Default tile
+								Default tile
 							</Tile>
 						</Grid.Row>
 					</Grid.Col>
 					<Grid.Col>
 						<Grid.Row className='cell'>
 							<Tile>
-							Default tile
+								Default tile
 							</Tile>
 						</Grid.Row>
 					</Grid.Col>

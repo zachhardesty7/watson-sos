@@ -13,6 +13,9 @@ html, body, #root {
   width: calc(100% - 256px);
 }
 
+.colSpace{
+  padding: 10px 20px;
+}
 .grid {
 }
 
@@ -39,8 +42,19 @@ html, body, #root {
   color: #171717;
   padding: 1rem 3rem; 
 }
+.tileTile{
+  @include carbon--font-family('sans');
+  font-size: 22px;
+  font-weight: 400;
+  color: #171717;
+  padding: 1rem 0rem; 
+
+}
 .navSpace{
 margin-left: 2rem;
+}
+.descTile{
+padding: 2px;
 }
 
 .bx--tile {
