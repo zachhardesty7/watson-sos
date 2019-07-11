@@ -1,3 +1,5 @@
+@import '../../node_modules/@carbon/elements/scss/type/font-family';
+
 html, body, #root {
   height: 100%;
   width: 100%;
@@ -12,4 +14,20 @@ html, body, #root {
 }
 
 .grid {
+}
+
+.title {
+  @include carbon--font-family('sans');
+  font-size: 36px;
+  font-weight: 400;
+  color: #171717;
+  padding: 2rem;
+}
+
+.bx--tile {
+  width: 100%;
+}
+
+.cell.cell {
+  margin: 2em 0;
 }

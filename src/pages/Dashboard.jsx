@@ -18,6 +18,7 @@ import {
 	SideNavLink,
 	SideNavMenu,
 	SideNavMenuItem,
+	Tile,
 } from 'carbon-components-react'
 
 import { Grid } from '../components'
@@ -103,10 +104,28 @@ export const DashboardPage = () => (
 		</SideNav>
 
 		<main className='main'>
+			<div><h1 className='title'>Emergency Response System</h1></div>
 			<Grid className='grid'>
 				<Grid.Row>
+
+					<Grid.Col xlg='6'>
+						<Grid.Row className='cell'>
+							<Tile>
+							Default tile
+							</Tile>
+						</Grid.Row>
+						<Grid.Row className='cell'>
+							<Tile>
+							Default tile
+							</Tile>
+						</Grid.Row>
+					</Grid.Col>
 					<Grid.Col>
-						safsadljksd;k
+						<Grid.Row className='cell'>
+							<Tile>
+							Default tile
+							</Tile>
+						</Grid.Row>
 					</Grid.Col>
 				</Grid.Row>
 			</Grid>
