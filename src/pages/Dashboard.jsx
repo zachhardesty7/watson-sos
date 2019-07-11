@@ -25,6 +25,7 @@ import { Grid } from '../components'
 
 import '../styles/Dashboard.scss'
 import companylogo from '../assets/WC_Logo.png'
+import map from '../assets/map.png'
 
 const Fade16 = () => (
 	<svg
@@ -170,10 +171,10 @@ export const DashboardPage = () => (
 							</Tile>
 						</Grid.Row>
 					</Grid.Col>
-					<Grid.Col>
+					<Grid.Col xlg='6'>
 						<Grid.Row className='cell'>
-							<Tile>
-								Default tile
+							<Tile className='map-con'>
+								<img alt='map' className='map' src={map} />
 							</Tile>
 						</Grid.Row>
 					</Grid.Col>
