@@ -24,6 +24,25 @@ html, body, #root {
   padding: 2rem;
 }
 
+.sideNavtitle {
+  @include carbon--font-family('sans');
+  margin-top: 5rem;
+  font-size: 22px;
+  font-weight: 400;
+  color: #171717;
+  padding: 1rem 3rem; 
+}
+.sideNavMtitle {
+  @include carbon--font-family('sans');
+  font-size: 22px;
+  font-weight: 400;
+  color: #171717;
+  padding: 1rem 3rem; 
+}
+.navSpace{
+margin-left: 2rem;
+}
+
 .bx--tile {
   width: 100%;
 }

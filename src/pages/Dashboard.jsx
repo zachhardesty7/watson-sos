@@ -42,12 +42,12 @@ export const DashboardPage = () => (
 		<Header>
 			<HeaderMenuButton aria-label='Open menu' onClick={() => {}} />
 			<HeaderName href='#'>
-				[Platform]
+				[SOS]
 			</HeaderName>
 			<HeaderNavigation aria-label='IBM [Platform]'>
-				<HeaderMenuItem href='#'>Link 1</HeaderMenuItem>
-				<HeaderMenuItem href='#'>Link 2</HeaderMenuItem>
-				<HeaderMenuItem href='#'>Link 3</HeaderMenuItem>
+				<HeaderMenuItem href='#'>ABOUT US</HeaderMenuItem>
+				<HeaderMenuItem href='#'>PRODUCTS</HeaderMenuItem>
+				<HeaderMenuItem href='#'>CONTACT US</HeaderMenuItem>
 				<HeaderMenu aria-label='Link 4'>
 					<HeaderMenuItem href='#'>Sub-link 1</HeaderMenuItem>
 					<HeaderMenuItem href='#'>Sub-link 2</HeaderMenuItem>
@@ -72,7 +72,40 @@ export const DashboardPage = () => (
 			isChildOfHeader={false}
 			aria-label='Side navigation'
 		>
-			<SideNavItems>
+			{/* <div><h2 className='sideNavtitle'></h2></div> */}
+			{/* <span></span> */}
+			<div><p className='sideNavtitle'>My Devices</p></div>
+			<SideNavItems className='navSpace'>
+				<SideNavMenu renderIcon={Fade16} title='Category title'>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>
+                Link
+					</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+				</SideNavMenu>
+				<SideNavMenu renderIcon={Fade16} title='Category title'>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>
+                Link
+					</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+				</SideNavMenu>
+				<SideNavMenu renderIcon={Fade16} title='Category title'>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>
+                Link
+					</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+				</SideNavMenu>
+				<SideNavLink renderIcon={Fade16} href='#'>
+              Link
+				</SideNavLink>
+				<SideNavLink renderIcon={Fade16} href='#'>
+              Link
+				</SideNavLink>
+			</SideNavItems>
+			<div><p className='sideNavMtitle'>My Protocols</p></div>
+			<SideNavItems className='navSpace'>
 				<SideNavMenu renderIcon={Fade16} title='Category title'>
 					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
 					<SideNavMenuItem aria-current='page' href='#'>
@@ -111,7 +144,9 @@ export const DashboardPage = () => (
 					<Grid.Col xlg='6'>
 						<Grid.Row className='cell'>
 							<Tile>
-							Default tile
+								<div>Educational Institution</div>
+								<div className='sideNavMtitle'>Willow Glen City College</div>
+								<div>4584  Hinkle Lake Road</div>
 							</Tile>
 						</Grid.Row>
 						<Grid.Row className='cell'>
