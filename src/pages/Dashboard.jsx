@@ -13,6 +13,12 @@ import {
 	HeaderMenuItem,
 	HeaderName,
 	HeaderNavigation,
+	SideNav,
+	SideNavItems,
+	SideNavLink,
+	SideNavMenu,
+	SideNavMenuItem,
+} from 'carbon-components-react'
 
 import '../styles/Dashboard.scss'
 
@@ -57,5 +63,41 @@ export const DashboardPage = () => (
 				</HeaderGlobalAction>
 			</HeaderGlobalBar>
 		</Header>
+		<SideNav
+			isFixedNav
+			expanded
+			isChildOfHeader={false}
+			aria-label='Side navigation'
+		>
+			<SideNavItems>
+				<SideNavMenu renderIcon={Fade16} title='Category title'>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>
+                Link
+					</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+				</SideNavMenu>
+				<SideNavMenu renderIcon={Fade16} title='Category title'>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>
+                Link
+					</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+				</SideNavMenu>
+				<SideNavMenu renderIcon={Fade16} title='Category title'>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>
+                Link
+					</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+				</SideNavMenu>
+				<SideNavLink renderIcon={Fade16} href='#'>
+              Link
+				</SideNavLink>
+				<SideNavLink renderIcon={Fade16} href='#'>
+              Link
+				</SideNavLink>
+			</SideNavItems>
+		</SideNav>
 	</>
 )
