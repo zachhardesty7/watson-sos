@@ -99,7 +99,7 @@ export const DashboardPage = () => (
 			caption='19 July 2019 [19:23:59]'
 			className='gunshot'
 		/>
-		<main className='main'>
+		<main className='dashboard'>
 			<div><h1 className='title'>Emergency Response System</h1></div>
 			<Grid className='grid'>
 				<Grid.Row>
