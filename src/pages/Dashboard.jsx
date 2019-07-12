@@ -5,6 +5,7 @@ import Notification20 from '@carbon/icons-react/lib/notification/20'
 import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20'
 
 import {
+	Checkbox,
 	Header,
 	HeaderGlobalAction,
 	HeaderGlobalBar,
@@ -166,7 +167,25 @@ export const DashboardPage = () => (
 						</Grid.Row>
 						<Grid.Row className='cell'>
 							<Tile>
-								Default tile
+								<Grid.Row className='cellTile'>
+									<Grid.Col>
+										<Grid.Row>
+											<div className='tileTile colSpace'>Incident Response Settings</div>
+										</Grid.Row>
+										<fieldset className='bx--fieldset'>
+											<legend className='bx--label colSpace'>Select your emergency response settings</legend>
+											<Checkbox defaultChecked labelText='Call Local Law Enforcement.' id='checkbox-label-1' />
+											{/* <span className='bx--checkbox-label-text'>Checkbox label</span> */}
+											<Checkbox defaultChecked labelText='Call Local Security Office.' id='checkbox-label-2' />
+											<Checkbox defaultChecked labelText='Initiate Amber Text to All Employees and Students.' id='checkbox-label-3' />
+											<Checkbox defaultChecked labelText='Initiate Lockdown Emergency Protocol.' id='checkbox-label-4' />
+										</fieldset>
+										{/* <Grid.Row><div className='descTile'>4584  Hinkle Lake Road</div></Grid.Row>
+										<Grid.Row><div className='descTile'>Roxbury, MA, 02119</div></Grid.Row>
+										<Grid.Row><div className='descTile'>Tel : 123 4567891</div></Grid.Row>
+										<Grid.Row><div className='descTile'>www.wgcc.edu</div></Grid.Row> */}
+									</Grid.Col>
+								</Grid.Row>
 							</Tile>
 						</Grid.Row>
 					</Grid.Col>
