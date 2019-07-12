@@ -3,7 +3,6 @@ import React from 'react'
 import {
 	Checkbox,
 	Header,
-	HeaderMenu,
 	HeaderMenuButton,
 	HeaderMenuItem,
 	HeaderName,
@@ -13,6 +12,7 @@ import {
 	SideNavMenu,
 	SideNavMenuItem,
 	Tile,
+	ToastNotification,
 } from 'carbon-components-react'
 
 import { Grid } from '../components'
@@ -33,17 +33,12 @@ export const DashboardPage = () => (
 		<Header>
 			<HeaderMenuButton aria-label='Open menu' onClick={() => { }} />
 			<HeaderName href='#'>
-				[SOS]
+				Watson SOS
 			</HeaderName>
-			<HeaderNavigation aria-label='IBM [Platform]'>
-				<HeaderMenuItem href='#'>ABOUT US</HeaderMenuItem>
-				<HeaderMenuItem href='#'>PRODUCTS</HeaderMenuItem>
-				<HeaderMenuItem href='#'>CONTACT US</HeaderMenuItem>
-				<HeaderMenu aria-label='Link 4'>
-					<HeaderMenuItem href='#'>Sub-link 1</HeaderMenuItem>
-					<HeaderMenuItem href='#'>Sub-link 2</HeaderMenuItem>
-					<HeaderMenuItem href='#'>Sub-link 3</HeaderMenuItem>
-				</HeaderMenu>
+			<HeaderNavigation aria-label='IBM Watson SOS'>
+				<HeaderMenuItem href='/dashboard'>Dashboard</HeaderMenuItem>
+				<HeaderMenuItem href='#'>Logging</HeaderMenuItem>
+				<HeaderMenuItem href='#'>Support</HeaderMenuItem>
 			</HeaderNavigation>
 		</Header>
 		<SideNav
@@ -55,47 +50,55 @@ export const DashboardPage = () => (
 			<div><p className='sideNavtitle'>My Devices</p></div>
 			<SideNavItems className='navSpace'>
 				<SideNavMenu renderIcon={() => <Audio width='16' height='16' />} title='Northside Lobby'>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Audio 1</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Audio 2</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Audio 3</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavMenu renderIcon={() => <Camera width='16' height='16' />} title='Westside Entrance'>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Camera 1</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Camera 2</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Camera 3</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavMenu renderIcon={() => <Gauge width='16' height='16' />} title='Courtyard'>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Sensor 1</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Sensor 2</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Sensor 3</SideNavMenuItem>
 				</SideNavMenu>
 			</SideNavItems>
 			<div><p className='sideNavMtitle'>Resp. Protocols</p></div>
 			<SideNavItems className='navSpace'>
 				<SideNavMenu renderIcon={() => <Alert width='16' height='16' />} title='Notify Local Police'>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>Configuration 1</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Configuration 2</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Configuration 3</SideNavMenuItem>
 				</SideNavMenu>
-				<SideNavMenu renderIcon={() => <Lock width='16' height='16' />} title='Lockdown Doors'>
-					<SideNavMenuItem href='#'>
-						Link
-					</SideNavMenuItem>
-					<SideNavMenuItem aria-current='page' href='#'>
-						Link
-					</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+				<SideNavMenu renderIcon={() => <Lock width='16' height='16' />} title='Lockdown'>
+					<SideNavMenuItem href='#'>Configuration 1</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Configuration 2</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>Configuration 3</SideNavMenuItem>
 				</SideNavMenu>
 				<SideNavMenu renderIcon={() => <Star width='16' height='16' />} title='Notify EMS'>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
-					<SideNavMenuItem aria-current='page' href='#'>
-						Link
-					</SideNavMenuItem>
-					<SideNavMenuItem href='#'>Link</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Configuration 1</SideNavMenuItem>
+					<SideNavMenuItem aria-current='page' href='#'>Configuration 2</SideNavMenuItem>
+					<SideNavMenuItem href='#'>Configuration 3</SideNavMenuItem>
 				</SideNavMenu>
 			</SideNavItems>
 		</SideNav>
 
+		<ToastNotification
+			lowContrast
+			title='Gunshot Detected'
+			subtitle={(
+				<ul>
+					<li>- Contacted principal</li>
+					<li>- Sounded alarms</li>
+					<li>- Locked down doors</li>
+					<li>- Turned off lights</li>
+				</ul>
+			)}
+			caption='19 July 2019 [19:23:59]'
+			className='gunshot'
+		/>
 		<main className='main'>
 			<div><h1 className='title'>Emergency Response System</h1></div>
 			<Grid className='grid'>
@@ -105,15 +108,13 @@ export const DashboardPage = () => (
 						<Grid.Row className='cell'>
 							<Tile>
 								<Grid.Row className='cell'>
-									{/* <Grid.Col> */}
 									<div className='colSpace'><img src={companylogo} width='100px' height='130px' alt='WC Logo' /></div>
-									{/* </Grid.Col> */}
 									<Grid.Col>
 										<Grid.Row>
 											<div>Educational Institution</div>
 										</Grid.Row>
 										<Grid.Row>
-											<div className='tileTile'>Willow Glen City College</div>
+											<div className='tileTile'>High Hill Academy</div>
 										</Grid.Row>
 										<Grid.Row><div className='descTile'>4584  Hinkle Lake Road</div></Grid.Row>
 										<Grid.Row><div className='descTile'>Roxbury, MA, 02119</div></Grid.Row>
@@ -128,20 +129,15 @@ export const DashboardPage = () => (
 								<Grid.Row className='cellTile'>
 									<Grid.Col>
 										<Grid.Row>
-											<div className='tileTile colSpace'>Incident Response Settings</div>
+											<div className='tileTile colSpace'>Lockdown Response Settings</div>
 										</Grid.Row>
 										<fieldset className='bx--fieldset'>
 											<legend className='bx--label colSpace'>Select your emergency response settings</legend>
-											<Checkbox defaultChecked labelText='Call Local Law Enforcement.' id='checkbox-label-1' />
-											{/* <span className='bx--checkbox-label-text'>Checkbox label</span> */}
-											<Checkbox defaultChecked labelText='Call Local Security Office.' id='checkbox-label-2' />
-											<Checkbox defaultChecked labelText='Initiate Amber Text to All Employees and Students.' id='checkbox-label-3' />
-											<Checkbox defaultChecked labelText='Initiate Lockdown Emergency Protocol.' id='checkbox-label-4' />
+											<Checkbox defaultChecked labelText='Contact principal' id='checkbox-label-1' />
+											<Checkbox defaultChecked labelText='Sound alarms' id='checkbox-label-2' />
+											<Checkbox defaultChecked labelText='Lockdown doors' id='checkbox-label-3' />
+											<Checkbox defaultChecked labelText='Turn off lights' id='checkbox-label-4' />
 										</fieldset>
-										{/* <Grid.Row><div className='descTile'>4584  Hinkle Lake Road</div></Grid.Row>
-										<Grid.Row><div className='descTile'>Roxbury, MA, 02119</div></Grid.Row>
-										<Grid.Row><div className='descTile'>Tel : 123 4567891</div></Grid.Row>
-										<Grid.Row><div className='descTile'>www.wgcc.edu</div></Grid.Row> */}
 									</Grid.Col>
 								</Grid.Row>
 							</Tile>
